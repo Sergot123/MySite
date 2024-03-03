@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/background.png');
+    width: 100%;
+    height: 110vh;
+    background-position: center;
+    text-transform: uppercase;
+    background-repeat: no-repeat;
+    font-family: 'Koulen', sans-serif;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu .menu-item {
+    transition: color 0.3s ease;
+}
+
+.menu .menu-item:hover {
+    color: #CFCFCF;
+}
+
+.menu img {
+    transition: transform 0.3s ease;
+}
+
+.menu img:hover {
+    transform: scale(1.1);
+}
+
+.menu-item {
+    font-family: Koulen, sans-serif;
+    transition: color 0.3s ease;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'Koulen', sans-serif;
+    align-self: stretch;
+    margin: auto 0;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.logo img {
+    position: fixed;
+    top: 20px;
+    left: 100px;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+.logo-placeholder {
+    visibility: hidden;
+    top: 20px;
+    left: 100px;
+}
+
+.logo img:hover {
+    transform: rotate(5deg);
+    opacity: 0.5;
+}
+
+.button-container {
+    position: relative;
+    background-color: rgba(62, 82, 103, 0.86);
+    border: none;
+    border-radius: 40px;
+    width: 215px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #CFCFCF;
+    padding: 20px 60px;
+    font-size: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+
+.button-container:hover {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 240px;
+}
+
+.container h1, .container p {
+    text-align: center;
+    font-weight: bold;
+}
+
+.container h1 {
+    font-family: 'Koulen', sans-serif;
+    font-size: 48px;
+    color: #DFDFDF;
+    font-weight: bold;
+    margin-bottom: -30px;
+}
+
+.container p {
+    font-family: 'Koulen', sans-serif;
+    color: #CFCFCF;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 46px;
+}
